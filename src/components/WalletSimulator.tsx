@@ -83,7 +83,7 @@ const WalletSimulator = () => {
         {/* Tx count */}
         <div className="flex items-center gap-1 text-xs text-muted-foreground pt-2 border-t border-border">
           <Hash className="h-3 w-3" />
-          {p.transactionCount} transactions (simulated)
+          {p.transactionCount} transactions
         </div>
       </div>
     </motion.div>

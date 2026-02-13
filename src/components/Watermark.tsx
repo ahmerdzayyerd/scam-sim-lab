@@ -6,7 +6,7 @@ const Watermark = () => {
       <div className="flex flex-col gap-20">
         {rows.map((_, i) => (
           <div key={i} className="watermark-text">
-            {"LAB SIMULATION – NO REAL WALLETS   •   ".repeat(6)}
+            {"CRYPTO LAB   •   ".repeat(6)}
           </div>
         ))}
       </div>

