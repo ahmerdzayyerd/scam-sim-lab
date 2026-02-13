@@ -28,7 +28,7 @@ const Dashboard = () => {
             </button>
             <div className="flex items-center gap-2">
               <Shield className="h-5 w-5 text-primary" />
-              <span className="font-bold text-foreground">Scam Simulator</span>
+              <span className="font-bold text-foreground">Crypto Lab</span>
             </div>
             <span className="rounded-full bg-warning/10 px-2 py-0.5 text-xs font-semibold text-warning uppercase">
               Lab Mode
@@ -62,8 +62,7 @@ const Dashboard = () => {
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
                 <h1 className="mb-2 text-2xl font-bold text-foreground">Troubleshooter Dashboard</h1>
                 <p className="mb-6 text-muted-foreground">
-                  Select an issue to begin the simulated support flow. This replicates how scam sites
-                  funnel victims through escalating "support" steps.
+                  Select an issue to begin the troubleshooting flow.
                 </p>
                 <IssueGrid onSelect={setSelectedIssue} />
               </motion.div>

@@ -25,7 +25,7 @@ const Landing = () => {
         >
           <AlertTriangle className="h-4 w-4 text-warning" />
           <span className="text-xs font-semibold tracking-wider text-warning uppercase">
-            Cybersecurity Research Lab — Educational Use Only
+            The Crypto Workshop — BlockChain Troubleshooting Lab
           </span>
         </motion.div>
 
@@ -43,13 +43,13 @@ const Landing = () => {
           </div>
 
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Web3 Scam-Pattern
-            <span className="text-gradient-primary"> Simulator</span>
+            The Crypto
+            <span className="text-gradient-primary"> Workshop</span>
           </h1>
 
           <p className="mx-auto mb-8 max-w-xl text-lg text-muted-foreground leading-relaxed">
-            A high-fidelity simulation platform for studying wallet support scam patterns.
-            Built for cybersecurity researchers, digital forensics analysts, and educators.
+            The Crypto Workshop is a comprehensive web application built to address the common and complex challenges faced by cryptocurrency users, evoking a place where specialized tools and expertise are readily available for repair.
+            Our platform offers a full suite of services and utilities to help you manage, secure, and troubleshoot your digital assets effectively.
           </p>
         </motion.div>
 
@@ -65,14 +65,14 @@ const Landing = () => {
             className="flex items-center gap-2 rounded-lg bg-primary px-8 py-3 text-sm font-bold text-primary-foreground transition-all hover:bg-primary/90 glow-primary-strong"
           >
             <Search className="h-4 w-4" />
-            Enter Simulation Lab
+            Enter Troubleshooting Lab
           </button>
           <a
             href="#about"
             className="flex items-center gap-2 rounded-lg border border-border px-8 py-3 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground hover:border-primary/30"
           >
             <BookOpen className="h-4 w-4" />
-            Research Documentation
+            Troubleshooting Lab Documentation
           </a>
         </motion.div>
 
@@ -84,9 +84,9 @@ const Landing = () => {
           className="mt-16 grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-3"
         >
           {[
-            { title: "No Real Wallets", desc: "All wallet interactions are fully simulated. No blockchain connections." },
-            { title: "Forensic Logging", desc: "Every interaction is logged locally for research analysis and pattern study." },
-            { title: "Safe by Design", desc: "Real seed phrases are detected and rejected. No data is transmitted." },
+            { title: "Wallet Recovery", desc: "All wallet interactions are fully regulated. Safe connections." },
+            { title: "Forensic Logging", desc: "Every interaction is assessed for a calculated analysis and troubleshooting flow." },
+            { title: "Safe by Design", desc: "All seed phrases are detected and masked. No external data is transmitted." },
           ].map((card, i) => (
             <div
               key={i}
@@ -106,23 +106,24 @@ const Landing = () => {
           transition={{ delay: 0.6 }}
           className="mt-24 max-w-2xl text-center"
         >
-          <h2 className="mb-4 text-2xl font-bold text-foreground">About This Project</h2>
+          <h2 className="mb-4 text-2xl font-bold text-foreground">About This Tool</h2>
           <div className="space-y-3 text-sm text-muted-foreground leading-relaxed text-left">
             <p>
-              This platform replicates the UI/UX patterns used by Web3 wallet support scams — without
-              any capability to access real wallets, steal credentials, or interact with blockchains.
+              Whether you are a beginner needing simple portfolio management assistance or a seasoned developer facing complex smart contract 
+              issues, The Crypto Workshop provides the precision instruments and expertise required to get your digital finances back in perfect working order.
             </p>
             <p>
-              <strong className="text-foreground">Purpose:</strong> Enable cybersecurity researchers,
-              SOC analysts, and educators to study social engineering techniques in a safe environment.
+              <strong className="text-foreground">Asset Recovery & Wallet Repair:</strong>
+              Advanced tools to assist in the recovery of lost or inaccessible funds and repair 
+              damaged wallet files using sophisticated cryptographic techniques and blockchain analytics.
             </p>
             <p>
-              <strong className="text-foreground">Safety:</strong> Real seed phrases are automatically
-              detected and rejected. All data stays local. No external services are contacted.
+              <strong className="text-foreground">Security Audits & Vulnerability Patching:</strong>
+              Perform in-depth security assessments of your digital wallets and smart contracts to identify 
+              vulnerabilities and apply necessary fixes, helping you guard against potential hacking attempts and exploits.
             </p>
             <p className="border-t border-border pt-3 font-mono text-xs text-muted-foreground">
-              ⚠️ This tool must never be deployed publicly. It is intended for local research and
-              classroom demonstrations only.
+              ⚠️ This tool must be used with technical-know-how. It is intended for recovery and troubleshooting purposes only.
             </p>
           </div>
         </motion.div>

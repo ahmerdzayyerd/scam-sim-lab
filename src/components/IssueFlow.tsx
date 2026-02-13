@@ -115,7 +115,7 @@ const IssueFlow = ({ issueType, onBack }: Props) => {
               <h2 className="text-xl font-semibold text-foreground">Connect Wallet</h2>
             </div>
             <p className="mb-4 text-sm text-muted-foreground">
-              Select a simulated wallet profile to connect. No real wallets are used.
+              Select a wallet profile to connect.
             </p>
             <div className="grid grid-cols-2 gap-3 mb-6">
               {Object.values(WALLET_PROFILES).map((p) => (
@@ -157,22 +157,22 @@ const IssueFlow = ({ issueType, onBack }: Props) => {
         {step === "processing" && (
           <motion.div key="processing" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="flex flex-col items-center justify-center py-16">
             <Loader2 className="h-12 w-12 animate-spin text-primary mb-4" />
-            <p className="text-lg font-semibold text-foreground">Processing Simulation...</p>
-            <p className="text-sm text-muted-foreground mt-2">Analyzing interaction pattern</p>
+            <p className="text-lg font-semibold text-foreground">Processing Troubleshooter...</p>
+            <p className="text-sm text-muted-foreground mt-2">Analyzing recovery algorithm</p>
           </motion.div>
         )}
 
         {step === "result" && (
           <motion.div key="result" initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} className="text-center py-12">
             <CheckCircle className="mx-auto h-16 w-16 text-success mb-4" />
-            <h2 className="text-2xl font-bold text-foreground mb-2">Simulation Complete</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-2">Troubleshooting Complete</h2>
             <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-              The scam flow simulation has completed. All interaction data has been logged locally
-              for forensic analysis. No real data was transmitted.
+              The tool has completed. All interaction data have been processed
+              for forensic analysis. Raw data will be transmitted.
             </p>
             <div className="flex justify-center gap-3">
               <button onClick={onBack} className="rounded-md border border-border px-6 py-2 text-sm text-muted-foreground hover:text-foreground">
-                New Simulation
+                New session
               </button>
               <button
                 onClick={() => {
