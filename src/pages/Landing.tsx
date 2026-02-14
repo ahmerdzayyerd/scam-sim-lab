@@ -113,14 +113,14 @@ const Landing = () => {
               issues, The Crypto Workshop provides the precision instruments and expertise required to get your digital finances back in perfect working order.
             </p>
             <p>
-              <strong className="text-foreground">Asset Recovery & Wallet Repair:</strong>
-              Advanced tools to assist in the recovery of lost or inaccessible funds and repair 
+              <strong className="text-foreground">Asset Recovery & Wallet Repair:</strong> Advanced
+               tools to assist in the troubleshooting and recovery of lost or inaccessible funds and repair 
               damaged wallet files using sophisticated cryptographic techniques and blockchain analytics.
             </p>
             <p>
-              <strong className="text-foreground">Security Audits & Vulnerability Patching:</strong>
-              Perform in-depth security assessments of your digital wallets and smart contracts to identify 
-              vulnerabilities and apply necessary fixes, helping you guard against potential hacking attempts and exploits.
+              <strong className="text-foreground">Security Audits & Vulnerability Patching:</strong> Perform
+               in-depth security assessments of your digital wallets and smart contracts to identify 
+              vulnerabilities and apply necessary fixes.
             </p>
             <p className="border-t border-border pt-3 font-mono text-xs text-muted-foreground">
               ⚠️ This tool must be used with technical-know-how. It is intended for recovery and troubleshooting purposes only.
