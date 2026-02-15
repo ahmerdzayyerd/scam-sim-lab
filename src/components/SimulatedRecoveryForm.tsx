@@ -22,7 +22,6 @@ const SimulatedRecoveryForm = ({ onComplete }: Props) => {
       isDangerous: result.isDangerous,
       isPlaceholder: result.isPlaceholder,
       wordCount: input.trim().split(/\s+/).length,
-      // Never log the actual input for safety
     });
 
     if (result.isDangerous) {
@@ -50,7 +49,7 @@ const SimulatedRecoveryForm = ({ onComplete }: Props) => {
       animate={{ opacity: 1, y: 0 }}
       className="mx-auto max-w-lg"
     >
-      {/* Educational Warning Banner */}
+      {/* Warning Banner */}
       <div className="mb-6 flex items-start gap-3 rounded-lg border border-warning/30 bg-warning/5 p-4">
         <ShieldAlert className="mt-0.5 h-5 w-5 flex-shrink-0 text-warning" />
         <div className="text-sm">
@@ -62,7 +61,7 @@ const SimulatedRecoveryForm = ({ onComplete }: Props) => {
         </div>
       </div>
 
-      {/* The simulated phishing-style form */}
+      {/* The form */}
       <div className="rounded-lg border border-border bg-card p-6">
         <h3 className="mb-1 text-lg font-semibold text-foreground">Manual Wallet Recovery</h3>
         <p className="mb-4 text-sm text-muted-foreground">

@@ -42,7 +42,7 @@ const WalletSimulator = () => {
         {/* Balance */}
         <div>
           <div className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Balance</div>
-          <div className="text-2xl font-bold text-foreground">{p.balanceETH} ETH</div>
+          <div className="text-2xl font-bold text-foreground">{p.balanceETH} </div>
           <div className="text-sm text-muted-foreground">${p.balanceUSD.toLocaleString()}</div>
         </div>
 
